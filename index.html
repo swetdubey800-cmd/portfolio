@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swet Dubey — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Syne for headings (distinctive), DM Sans for body text -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom cursor elements -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ===================================================
+       NAVBAR
+  =================================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">SD<span class="dot">.</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero"       class="nav-link active">Home</a></li>
+      <li><a href="#about"      class="nav-link">About</a></li>
+      <li><a href="#skills"     class="nav-link">Skills</a></li>
+      <li><a href="#projects"   class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#contact"    class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===================================================
+       HERO
+  =================================================== -->
+  <section class="hero" id="hero">
+    <!-- Decorative background elements -->
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+    <div class="hero-line hero-line--h"></div>
+    <div class="hero-line hero-line--v"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">Hello, I'm</p>
+      <h1 class="hero-name reveal-up delay-1">
+        Swet<br /><span class="name-outline">Dubey</span>
+      </h1>
+      <div class="hero-title-row reveal-up delay-2">
+        <span class="title-badge">Frontend Developer</span>
+        <span class="title-divider">×</span>
+        <span class="title-badge">Shopify Developer</span>
+      </div>
+      <p class="hero-intro reveal-up delay-3">
+        I build responsive and real-world websites using<br />
+        <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
+      </p>
+      <div class="hero-cta reveal-up delay-4">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#" class="btn btn-ghost">Download Resume <span class="btn-arrow">↗</span></a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       ABOUT
+  =================================================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label reveal-up">About</div>
+      <div class="about-grid">
+
+        <div class="about-text reveal-up delay-1">
+          <h2 class="section-heading">
+            Crafting digital<br /><em>experiences</em> that matter.
+          </h2>
+          <p>
+            I'm a frontend developer with hands-on experience building performant, 
+            pixel-perfect websites that bridge design and functionality. Specialising 
+            in modern web technologies and Shopify ecosystem customisation, I've worked 
+            on live production environments — from school management portals to e-commerce 
+            storefronts — ensuring every user interaction feels intentional and smooth.
+          </p>
+          <p>
+            Currently interning at Strong Nation, I contribute directly to a live Shopify 
+            store — implementing UI improvements, custom Liquid logic, and feature additions 
+            that drive real business impact. I care deeply about clean code, responsive 
+            design, and delivering work that holds up under scrutiny.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Real-world Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">4mo</span>
+              <span class="stat-label">Professional Exp.</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual reveal-up delay-2">
+          <div class="av-card">
+            <div class="av-dot-row">
+              <span class="av-dot red"></span>
+              <span class="av-dot yellow"></span>
+              <span class="av-dot green"></span>
+            </div>
+            <div class="av-code">
+              <div class="av-line"><span class="c-pink">const</span> <span class="c-cyan">developer</span> = {</div>
+              <div class="av-line pl-1">name: <span class="c-gold">"Swet Dubey"</span>,</div>
+              <div class="av-line pl-1">role: <span class="c-gold">"Frontend Dev"</span>,</div>
+              <div class="av-line pl-1">focus: [<span class="c-gold">"UI"</span>, <span class="c-gold">"Shopify"</span>],</div>
+              <div class="av-line pl-1">location: <span class="c-gold">"India"</span>,</div>
+              <div class="av-line pl-1">available: <span class="c-pink">true</span></div>
+              <div class="av-line">};</div>
+            </div>
+            <div class="av-status">
+              <span class="status-dot"></span> Open to opportunities
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       SKILLS
+  =================================================== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-label reveal-up">Skills</div>
+      <h2 class="section-heading centered reveal-up delay-1">My Tech Stack</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-category reveal-up delay-1">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">◈</span>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill pill--dim">React <sup>basics</sup></span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up delay-2">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">◈</span>
+            <h3>Tools &amp; Platforms</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill--gold">Shopify Liquid</span>
+            <span class="pill">WordPress</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up delay-3">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">◈</span>
+            <h3>Others</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill--dim">Node.js <sup>basics</sup></span>
+             <span class="pill pill--dim">C++ <sup>intermidiate</sup></span>
+              <span class="pill pill--dim">python <sup>intermidiate</sup></span>
+            <span class="pill">Git &amp; GitHub</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       PROJECTS
+  =================================================== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-label reveal-up">Projects</div>
+      <h2 class="section-heading reveal-up delay-1">Selected Work</h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal-up delay-1">
+          <div class="project-num">01</div>
+          <div class="project-body">
+            <h3 class="project-title">School Website</h3>
+            <p class="project-desc">
+              A fully responsive institutional website developed for a real school — featuring 
+              dynamic content sections, photo gallery, contact forms, and an admin-friendly 
+              structure. Built to give the institution a credible, modern online presence.
+            </p>
+            <div class="project-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://avs-inter-college.swetdubey800.workers.dev/" class="btn btn-sm btn-primary">Live Demo ↗</a>
+            <a href="https://github.com/swetdubey800-cmd/AVS-INTER-COLLEGE.git" class="btn btn-sm btn-ghost">GitHub</a>
+          </div>
+          <div class="project-accent"></div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal-up delay-2">
+          <div class="project-num">02</div>
+          <div class="project-body">
+            <h3 class="project-title">Amazon Clone</h3>
+            <p class="project-desc">
+              A feature-rich e-commerce clone replicating Amazon's core UX — product listings 
+              by category, a functional search bar, add-to-cart system, and a clean checkout 
+              flow. Built to demonstrate depth of JavaScript and DOM manipulation skills.
+            </p>
+            <div class="project-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://swetdubey800-cmd.github.io/clone-project/" class="btn btn-sm btn-primary">Live Demo ↗</a>
+            <a href="https://github.com/swetdubey800-cmd/clone-project.git" class="btn btn-sm btn-ghost">GitHub</a>
+          </div>
+          <div class="project-accent"></div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal-up delay-3">
+          <div class="project-num">03</div>
+          <div class="project-body">
+            <h3 class="project-title">Shopify Customisation</h3>
+            <p class="project-desc">
+              End-to-end UI customisation and feature development on a live Shopify store — 
+              including custom Liquid sections, theme overrides, responsive layout fixes, 
+              and new interactive components integrated directly into production.
+            </p>
+            <div class="project-stack">
+              <span>Shopify Liquid</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://strongnation.in/" class="btn btn-sm btn-primary">Live Demo ↗</a>
+          </div>
+          <div class="project-accent"></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       EXPERIENCE
+  =================================================== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-label reveal-up">Experience</div>
+      <h2 class="section-heading reveal-up delay-1">Where I've Worked</h2>
+
+      <div class="exp-timeline reveal-up delay-2">
+        <div class="exp-card">
+          <div class="exp-left">
+            <div class="exp-dot"></div>
+            <div class="exp-line-v"></div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-meta">
+              <span class="exp-duration">Jan 2025 — Present · 4 months</span>
+              <span class="exp-badge">Current</span>
+            </div>
+            <h3 class="exp-role">Frontend Developer Intern</h3>
+            <p class="exp-company">Strong Nation</p>
+            <ul class="exp-duties">
+              <li>Customised Shopify themes using Liquid templating for tailored storefront experiences</li>
+              <li>Implemented UI/UX improvements across product, collection, and landing pages</li>
+              <li>Added new interactive features and sections directly to the live production store</li>
+              <li>Collaborated on responsive design fixes ensuring cross-device consistency</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       CONTACT
+  =================================================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label reveal-up">Contact</div>
+      <h2 class="section-heading centered reveal-up delay-1">
+        Let's Build Something<br /><em>Together</em>
+      </h2>
+      <p class="contact-sub reveal-up delay-2">
+        Open to freelance projects, internships, and full-time roles. Drop a message.
+      </p>
+
+      <div class="contact-grid reveal-up delay-3">
+
+        <a href="mailto:swet@email.com" class="contact-card">
+          <div class="cc-icon">✉</div>
+          <div class="cc-info">
+            <span class="cc-label">Email</span>
+            <span class="cc-value">swetdubey800@gmail.com</span>
+          </div>
+          <span class="cc-arrow">↗</span>
+        </a>
+
+        <a href="https://github.com/swetdubey800-cmd" target="_blank" rel="noopener" class="contact-card">
+          <div class="cc-icon">⌥</div>
+          <div class="cc-info">
+            <span class="cc-label">GitHub</span>
+            <span class="cc-value">github.com/swetdubey</span>
+          </div>
+          <span class="cc-arrow">↗</span>
+        </a>
+
+     <a href="tel:9569610617" class="contact-card">
+  <div class="cc-icon">📞</div>
+  <div class="cc-info">
+    <span class="cc-label">Call</span>
+    <span class="cc-value">+91 95696 10617</span>
+  </div>
+  <span class="cc-arrow">↗</span>
+</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       FOOTER
+  =================================================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">SD<span class="dot">.</span></span>
+      <span class="footer-copy">© 2025 Swet Dubey. Designed &amp; built with precision.</span>
+      <a href="#hero" class="footer-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
